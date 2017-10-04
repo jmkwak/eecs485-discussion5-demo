@@ -11,55 +11,32 @@ class RandomWidget extends React.Component {
   constructor(props) {
     // Initialize immutable properties and mutable state
     super(props);
-    this.state = { words: [] };
+    // TODO 1: initialize component state
+
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
-    // Call REST API to get a random word
-    fetch(this.props.url, { credentials: 'same-origin' })
-      .then((response) => {
-        if (!response.ok) throw Error(response.statusText);
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data.random_word);
-        this.setState({
-          words: [data.random_word, ]
-        });
-      })
-      .catch(error => console.log(error)); // eslint-disable-line no-console
+    // TODO 2: Call REST API to get a random word and update state
+    // check out:
+    // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
   }
 
   handleClick(e) {
-    // Handle 'add word' button.  Add a word to the list.
-    e.preventDefault();
-    fetch(this.props.url, { credentials: 'same-origin' })
-      .then((response) => {
-        if (!response.ok) throw Error(response.statusText);
-        return response.json();
-      })
-      .then((data) => {
-        this.setState(prevState => ({
-          words: prevState.words.concat([data.random_word, ])
-        }));
-      })
-      .catch(error => console.log(error)); // eslint-disable-line no-console
+    // TODO 4: Handle 'add word' button.  Retrieve and add word to our state.
+    // useful link:
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
+    e.preventDefault(); // Prevent button form submitting form
   }
 
   render() {
-    // Render button and word list
+    // TODO 3: Render a button and a word list from the state
+    // check out:
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+    // https://reactjs.org/docs/lists-and-keys
     return (
-      <div className="randomwords">
-        <button onClick={this.handleClick}>
-          Add Word
-        </button>
-
-        <ul>
-        {this.state.words.map((word) => <li>{word}</li>)}
-        </ul>
-      </div>
+      <p>IMPLEMENT ME</p>
     );
   }
 }
