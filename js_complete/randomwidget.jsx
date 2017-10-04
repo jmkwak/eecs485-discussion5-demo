@@ -17,15 +17,16 @@ class RandomWidget extends React.Component {
   }
 
   componentDidMount() {
-    // Call REST API to get number of likes
+    // Call REST API to get a random word
     fetch(this.props.url, { credentials: 'same-origin' })
       .then((response) => {
         if (!response.ok) throw Error(response.statusText);
         return response.json();
       })
       .then((data) => {
+        console.log(data.random_word);
         this.setState({
-          words: [data.word, ]
+          words: [data.random_word, ]
         });
       })
       .catch(error => console.log(error)); // eslint-disable-line no-console
@@ -41,20 +42,23 @@ class RandomWidget extends React.Component {
       })
       .then((data) => {
         this.setState(prevState => ({
-          words: prevState.words.push(data.word)
+          words: prevState.words.concat([data.random_word, ])
         }));
       })
       .catch(error => console.log(error)); // eslint-disable-line no-console
   }
 
   render() {
-    // Render button and number of likes
+    // Render button and word list
     return (
       <div className="randomwords">
         <button onClick={this.handleClick}>
           Add Word
         </button>
-        <p>{this.state.words.join()}</p>
+
+        <ul>
+        {this.state.words.map((word) => <li>{word}</li>)}
+        </ul>
       </div>
     );
   }
