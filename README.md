@@ -14,6 +14,13 @@ list of words along with a button that adds a new word to the list.
 
 ## Setup
 
+### React Dev Tools
+It will be wildly useful to install React dev tools before continuing on
+with this demo. You can find React dev tools in the chrome web store 
+[here](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+or in the firefox web store 
+[here](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
+
 ### Using Vagrant
 If you'd like to use vagrant, the only setup you'll need to do is to change into
 the project repo and initialize the vagrant machine:
@@ -22,8 +29,9 @@ $ cd $DEMO_ROOT
 $ vagrant up
 ```
 
-You can then `ssh` into the vagrant machine and continue along with 
-[Overview](#overview).
+The `vagrant up` command takes care of installing all dependencies, python, 
+and node packages for you. You can then `ssh` into the vagrant machine and 
+continue along with [Overview](#overview). 
 
 ### Using Local Environment
 If you'd like to develope locally, you'll need to create a new python virtual
@@ -66,7 +74,6 @@ $ ./bin/randomsiterun
 In another terminal query the API with `httpie`:
 ```shellsession
 $ http "http://localhost:8000/api/v1/random/"
-$ TODO add output
 ```
 
 #### Random Widget (`/`) and React
