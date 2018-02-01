@@ -21,20 +21,7 @@ with this demo. You can find React dev tools in the chrome web store
 or in the firefox web store 
 [here](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
 
-### Using Vagrant
-If you'd like to use vagrant, the only setup you'll need to do is to change into
-the project repo and initialize the vagrant machine:
-```shellsession
-$ cd $DEMO_ROOT
-$ vagrant up
-```
-
-The `vagrant up` command takes care of installing all dependencies, python, 
-and node packages for you. You can then `ssh` into the vagrant machine and 
-continue along with [Overview](#overview). 
-
-### Using Local Environment
-If you'd like to develope locally, you'll need to create a new python virtual
+You'll need to create a new python virtual
 environment and a node environment as well as install the proper python and 
 node packages. We've included a `setup.py` and `package.json` for you in this 
 repository. Thus you can create the environments and install the packages with 
@@ -93,3 +80,11 @@ It's also worth studying how `randomsite/templates/index.html`,
 another. Note that `randomsite/templates/index.html` references 
 `randomsite/static/js/bundle.js` which is the compiled form of the react 
 components in `randomsite/js/`.
+
+#### Component Heirarchy
+
+Now we will take this a step further to demonstrate how a page can be comprised of multiple components.  
+On our main page, we want to display "random pannel."  A random pannel consists of 3 random widgets, and a displayed message, "I'm using ReactJS!".  The random pannel should be a new component, which you'll implement in `randomsite/js/randompannel.jsx`.  You'll 
+want to modify `randomsite/js/main.jsx` to render the random pannel component, instead of the random widget. 
+**You shouldn't have to modify your code in `randomsite/js/randomwidget.jsx`**
+
