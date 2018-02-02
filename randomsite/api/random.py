@@ -29,7 +29,7 @@ def get_message():
     """Return a random word from a list of words."""
     data = {}
     random_idx = random.randint(0, len(RANDOM_MESSAGES) - 1)
-    data["message"] = RANDOM_WORDS[random_idx]
+    data["random_message"] = RANDOM_MESSAGES[random_idx]
     return flask.jsonify(**data)
 
 

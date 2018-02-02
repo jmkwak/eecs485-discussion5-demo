@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import fetch from 'isomorphic-fetch';
+import RandomWidget from './randomwidget.jsx';
 
 
 class RandomPannel extends React.Component {
@@ -36,18 +37,20 @@ class RandomPannel extends React.Component {
     // Render button and word list
     return (
       <div>
-        {this.state.message}
+      <div>
+        <h1>{this.state.message}</h1>
       </div>
       <ul>
-      <li><RandomWidget url = "/api/v1/random/"></li>
-      <li><RandomWidget url = "/api/v1/random/"></li>
+      <li><RandomWidget url="/api/v1/random/"/></li>
+      <li><RandomWidget url="/api/v1/random/"/></li>
       </ul>
+      </div>
     );
   }
 }
 
-RandomWidget.propTypes = {
+RandomPannel.propTypes = {
   url: PropTypes.string.isRequired,
 };
 
-export default RandomWidget;
+export default RandomPannel;
