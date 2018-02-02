@@ -84,7 +84,7 @@ components in `randomsite/js/`.
 #### Component Heirarchy
 
 Now we will take this a step further to demonstrate how a page can be comprised of multiple components.  
-On our main page, we want to display "random pannel."  A random pannel consists of 2 random widgets, and an extra displayed random message, which you can get from `/api/v1/message/`.  The random pannel should be a new component, which you'll implement in `randomsite/js/randompannel.jsx`.  You'll 
+On our main page, we want to display "random pannel."  A random pannel consists of a displayed random message, which you can get from `/api/v1/message/`, and 2 random widgets.  The random pannel should be a new component, which you'll implement in `randomsite/js/randompannel.jsx`.  You'll 
 want to modify `randomsite/js/main.jsx` to render the random pannel component, instead of the random widget. 
 **You shouldn't have to modify your code in `randomsite/js/randomwidget.jsx`**
 
