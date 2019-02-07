@@ -1,7 +1,7 @@
 """
 Views for randomsite.
 
-Maxwell Morgan <mjmor@umich.edu>
+eecs485 Staff
 """
 
 from randomsite.views.index import show_index

@@ -3,7 +3,7 @@ randomsite REST API for random words.
 
 /api/v1/random/
 
-Maxwell Morgan <mjmor@umich.edu>
+eecs485 Staff
 """
 import random
 
@@ -31,5 +31,3 @@ def get_message():
     random_idx = random.randint(0, len(RANDOM_MESSAGES) - 1)
     data["random_message"] = RANDOM_MESSAGES[random_idx]
     return flask.jsonify(**data)
-
-

@@ -4,7 +4,7 @@ Randomsite index (main) view.
 URLs include:
 /
 
-Maxwell Morgan <mjmor@umich.edu>
+eecs485 Staff
 """
 import flask
 import randomsite

@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Maxwell Morgan <mjmor@umich.edu>
+# eecs485 Staff
 
 # Stop on errors, print commands
 set -e

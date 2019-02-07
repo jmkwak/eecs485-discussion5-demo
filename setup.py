@@ -1,7 +1,7 @@
 """
 Random demo flask app python package configuration.
 
-Maxwell Morgan <mjmor@umich.edu>
+eecs485 Staff
 """
 
 from setuptools import setup
