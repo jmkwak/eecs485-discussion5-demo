@@ -4,7 +4,7 @@ import fetch from 'isomorphic-fetch';
 
 
 class RandomPannel extends React.Component {
-  /* 
+  /*
   Display two random widgets and a random message
   */
 
@@ -26,7 +26,6 @@ class RandomPannel extends React.Component {
 
   render() {
     // TODO 3: Render two random widgets and the random message from the state
-    // check out:
     return (
       <p>IMPLEMENT ME</p>
     );
