@@ -1,6 +1,6 @@
-# eecs485f18-discussion5-demo
+# eecs485-discussion5-demo
 
-A hands on demo for EECS 485 Fall 2018 Discussion 5.
+A hands on demo for EECS 485 Discussion 5.
 
 Contents:
 1. [Objective](#objective)
