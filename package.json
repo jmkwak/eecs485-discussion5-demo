@@ -1,8 +1,8 @@
 {
-  "name": "insta485",
+  "name": "randomsite",
   "version": "0.1.0",
-  "description": "insta485 front end",
-  "main": "insta485/js/main.jsx",
+  "description": "randomsite front end",
+  "main": "randomsite/js/main.jsx",
   "author": "awdeorio",
   "license": "MIT",
   "devDependencies": {

@@ -1,7 +1,6 @@
 """
 Random demo flask app python package configuration.
 
-eecs485 Staff
 """
 
 from setuptools import setup

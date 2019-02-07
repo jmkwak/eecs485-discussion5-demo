@@ -1,6 +1,4 @@
 #!/bin/bash
-#
-# eecs485 Staff
 
 # Stop on errors, print commands
 set -e

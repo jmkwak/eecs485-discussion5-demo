@@ -3,7 +3,6 @@ randomsite REST API for random words.
 
 /api/v1/random/
 
-eecs485 Staff
 """
 import random
 

@@ -89,4 +89,5 @@ want to modify `randomsite/js/main.jsx` to render the random pannel component, i
 **You shouldn't have to modify your code in `randomsite/js/randomwidget.jsx`**
 
 ### Acknowledgments
-Original demo written by Maxwell Morgan <mjmor@umich.edu>.
+Original demo written by Maxwell Morgan.
+maintained by EECS 485 Staff.

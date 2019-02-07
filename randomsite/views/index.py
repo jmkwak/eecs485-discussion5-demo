@@ -4,7 +4,6 @@ Randomsite index (main) view.
 URLs include:
 /
 
-eecs485 Staff
 """
 import flask
 import randomsite
