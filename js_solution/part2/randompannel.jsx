@@ -5,15 +5,14 @@ import RandomWidget from './randomwidget.jsx';
 
 
 class RandomPannel extends React.Component {
-  /* 
-  Display a list of random words and a button to generate new random words. 
+  /*
+  Display a list of random words and a button to generate new random words.
   */
 
   constructor(props) {
     // Initialize immutable properties and mutable state
     super(props);
     this.state = { message: "" };
-    // This binding is necessary to make `this` work in the callback
   }
 
   componentDidMount() {

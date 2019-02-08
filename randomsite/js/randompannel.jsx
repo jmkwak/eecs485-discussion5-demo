@@ -13,8 +13,6 @@ class RandomPannel extends React.Component {
     super(props);
     // TODO 1: initialize component state
 
-    // This binding is necessary to make `this` work in the callback
-    this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
