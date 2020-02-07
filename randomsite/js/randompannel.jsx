@@ -30,7 +30,7 @@ class RandomPannel extends React.Component {
   }
 }
 
-RandomWidget.propTypes = {
+RandomPannel.propTypes = {
   url: PropTypes.string.isRequired,
 };
 
